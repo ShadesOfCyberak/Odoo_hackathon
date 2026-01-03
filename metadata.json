@@ -1,0 +1,7 @@
+{
+  "name": "GlobeTrotter",
+  "description": "An intelligent, end-to-end travel planning platform that empowers users to dream, design, and organize personalized multi-city itineraries with AI-powered suggestions and budget tracking.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
