@@ -76,8 +76,9 @@ Visual breakdown of travel investments using **Recharts**.
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/globetrotter-studio.git
-cd globetrotter-studio
+git clone https://github.com/your-username/Odoo_hackathon.git
+cd Odoo_hackathon
+
 ```
 
 ### 2️⃣ Install Dependencies
