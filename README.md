@@ -19,3 +19,4 @@ View your app in AI Studio: https://ai.studio/apps/drive/1TgnGDouztfzGy2eg7Ls5NU
 3. Run the app:
    `npm run dev`
 # globetrotte
+# Odoo_hackathon
