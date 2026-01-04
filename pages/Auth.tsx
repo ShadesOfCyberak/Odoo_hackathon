@@ -24,6 +24,7 @@ const Auth = ({ onLogin }: any) => {
         alert(`Access Denied: ${error.message}`);
       } else {
         onLogin(data.user);
+        window.location.href = '/';
       }
     } else {
       // REAL SIGNUP
