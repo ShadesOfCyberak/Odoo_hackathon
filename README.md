@@ -6,6 +6,10 @@ Unlike traditional linear trip planners, GlobeTrotter Studio uses a **node-based
 
 ---
 
+## **Public URL:** https://globetrotter-umber.vercel.app/
+
+---
+
 ## 🚀 Key Innovation: The Geospatial Architect
 
 At the heart of the platform is the **Draft Builder**, powered by **React Flow**.
