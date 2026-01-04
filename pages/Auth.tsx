@@ -31,7 +31,8 @@ const Auth = ({ onLogin }: any) => {
         email,
         password,
         options: {
-          data: { display_name: name } // Stores the name in user metadata
+          data: {display_name: name }, // Stores the name in user metadata
+          emailRedirectTo: window.location.origin,
         }
       });
 
