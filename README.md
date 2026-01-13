@@ -1,77 +1,95 @@
-
 # 🌍 GlobeTrotter Studio
 
-**GlobeTrotter Studio** is a **premium, end-to-end travel architecture platform**.
-Unlike traditional linear trip planners, GlobeTrotter Studio uses a **node-based graph system** that allows travelers to **dream, design, and organize multi-city expeditions** inside a professional visual workspace.
+## Visual Travel Architecture Platform
+
+GlobeTrotter Studio is a graph-based travel planning platform that enables users to visually design, analyze, and organize multi-city journeys inside a professional workspace.
+
+Unlike traditional itinerary tools that rely on lists and step-by-step forms, GlobeTrotter Studio models travel as a node-based geospatial graph, allowing users to reason about routes, destinations, and budgets visually.
+
+Built to explore graph-based UX, AI-assisted planning, and modern frontend architecture.
 
 ---
 
-## **Public URL:** https://globetrotter-umber.vercel.app/
+## 🔗 Live Application
+
+**Public URL:** [https://globetrotter-umber.vercel.app/](https://globetrotter-umber.vercel.app/)
 
 ---
 
-## 🚀 Key Innovation: The Geospatial Architect
+## 🚀 Key Innovation — The Geospatial Architect
 
-At the heart of the platform is the **Draft Builder**, powered by **React Flow**.
+At the core of the platform is the **Draft Builder**, powered by **React Flow**.
 
-Every destination is treated as a **Mission Node** on a dynamic canvas, enabling:
+Each destination is represented as a **Mission Node** on a dynamic canvas, enabling structured and scalable journey design.
+
+---
+
+## 🧩 Core Capabilities
 
 ### 🧭 Visual Pathfinding
 
-Automatically link cities to visualize the logical flow of your journey.
+* Cities are connected visually to represent travel flow
+* Helps identify inefficient routing
+* Designed for complex multi-city and multi-country journeys
 
 ### 🧠 AI Intel Engine
 
-Powered by **Gemini 2.0 Flash Lite**, each node can instantly fetch:
+Using **Google Gemini 2.0 Flash Lite**, each Mission Node can fetch:
 
 * Localized activity suggestions
 * Cultural highlights
-* Cost estimates
+* Approximate cost estimates
 
 ### 💰 Fiscal Intelligence
 
-Real-time **budget aggregation localized in INR (₹)**, producing a total **Fiscal Index** for the entire expedition blueprint.
+* Destination-level costs are aggregated automatically
+* Budgets are normalized to **INR (₹)**
+* Produces a single **Fiscal Index** for the entire journey
 
 ---
 
-## ✨ Premium Features
+## ✨ Features
 
-### 🔍 Discovery Studio
-
-Search the global destination archive.
-**One-click “Launch Expedition”** initializes your workspace with AI-curated data.
-
-### 🗺️ Mission Manifests
-
-High-contrast timeline views and detailed activity lists that feel like professional mission briefings.
-
-### ☁️ Cloud Persistence
-
-Seamless integration with **Supabase Auth & Database**.
-Your blueprints sync in real time and remain accessible from any device.
-
-### 📡 Transmission Hub
-
-* Share plans directly via **WhatsApp**
-* Export **high-resolution PDF Mission Briefs** using a custom print-engine CSS
-
-### 📊 Expedition Analytics
-
-Visual breakdown of travel investments using **Recharts**.
+* 🔍 **Discovery Studio** – Search destinations and initialize journeys with AI-curated data
+* 🗺️ **Draft Builder** – Node-based visual planning canvas
+* 🧠 **AI-assisted insights** per destination
+* 💰 **Real-time budget aggregation**
+* ☁️ **Cloud persistence** using Supabase
+* 📡 **Sharing & PDF export** with custom print CSS
+* 📊 **Budget analytics** using charts
 
 ---
 
-## 🛠️ Technical Stack
+## 🛠️ Tech Stack
 
-| Layer               | Technology                              |
-| ------------------- | --------------------------------------- |
-| **Runtime**         | React 19 + Vite 6 (Ultra-fast HMR)      |
-| **Canvas UI**       | React Flow (Node-based architecture)    |
-| **AI Intelligence** | Google Gemini 2.0 SDK                   |
-| **Backend**         | Supabase (PostgreSQL + GoTrue Auth)     |
-| **Styling**         | Tailwind CSS (Custom Studio Dark Theme) |
-| **Icons**           | Lucide React                            |
-| **Charts**          | Recharts                                |
+| Layer     | Technology                       |
+| --------- | -------------------------------- |
+| Frontend  | React 19, Vite 6                 |
+| Canvas UI | React Flow                       |
+| Styling   | Tailwind CSS (Studio Dark Theme) |
+| AI        | Google Gemini 2.0 SDK            |
+| Backend   | Supabase (PostgreSQL + Auth)     |
+| Charts    | Recharts                         |
+| Icons     | Lucide React                     |
+
+---
+
+## 📁 Project Structure
+
+```text
+Odoo_hackathon-main/
+├── App.tsx            # Root application component
+├── index.html         # HTML entry point
+├── index.tsx          # React application bootstrap
+├── components/        # Reusable UI components
+├── pages/             # Route-level pages and views
+├── services/          # API integrations (AI, Supabase, utilities)
+├── lib/               # Shared libraries and helper modules
+├── package.json       # Project metadata and dependencies
+├── tsconfig.json      # TypeScript configuration
+├── vite.config.ts     # Vite build configuration
+├── README.md          # Project documentation
+```
 
 ---
 
@@ -82,7 +100,6 @@ Visual breakdown of travel investments using **Recharts**.
 ```bash
 git clone https://github.com/your-username/Odoo_hackathon.git
 cd Odoo_hackathon
-
 ```
 
 ### 2️⃣ Install Dependencies
@@ -91,7 +108,7 @@ cd Odoo_hackathon
 npm install
 ```
 
-### 3️⃣ Configure Environment Variables
+### 3️⃣ Environment Variables
 
 Create a `.env.local` file in the root directory:
 
@@ -101,7 +118,7 @@ VITE_SUPABASE_URL=your_supabase_url
 VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
-### 4️⃣ Initialize Database (Supabase)
+### 4️⃣ Supabase Database Setup
 
 Run the following SQL in the **Supabase SQL Editor**:
 
@@ -118,7 +135,7 @@ create table trips (
 );
 ```
 
-### 5️⃣ Launch the Studio
+### 5️⃣ Run Locally
 
 ```bash
 npm run dev
@@ -128,28 +145,48 @@ npm run dev
 
 ## 🎨 Design Philosophy
 
-GlobeTrotter Studio follows a **“Command Center” aesthetic**, optimized for focus and clarity.
+GlobeTrotter Studio follows a **Command Center UI** approach, optimized for focus and clarity.
 
-### Design Principles
+**Design Principles:**
 
-* **Glassmorphism**: Semi-transparent layers for spatial depth
-* **High-Contrast Typography**: Inter & Plus Jakarta Sans for a technical, modern feel
-* **Contextual Imagery**: Smart landmark-based image fetching using professional photography databases
-
----
-
-## ⚖️ License
-
-Distributed under the **MIT License**.
-See `LICENSE` for more information.
+* Glassmorphism for spatial depth
+* High-contrast typography (Inter & Plus Jakarta Sans)
+* Minimal UI clutter
+* Workspace-first experience over booking-style flows
 
 ---
 
-## 🏆 Hackathon Note
+## 👥 Contributors
 
-Developed for the **2026 AI Studio Hackathon**.
-
-> **Engineering the perfect journey.**
+* @sharan12007
+* @Raihaan29
+* @ShadesOfCyberak
+* @praanesh06
 
 ---
 
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+See the LICENSE file for more information.
+
+---
+
+## 🏆 Hackathon Context
+
+Developed as part of the **2026 AI Studio Hackathon**, focusing on:
+
+* Graph-based user interfaces
+* AI-assisted planning systems
+* Visual alternatives to traditional travel planners
+
+---
+
+## ⭐ Support
+
+If you find this project useful:
+
+* ⭐ Star the repository
+* 🐛 Open issues or discussions
+* 🤝 Contribute improvements
